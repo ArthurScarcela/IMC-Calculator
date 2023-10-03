@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/98396e2f25.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/98396e2f25.js" crossorigin="anonymous"></script>
+    <title>Calculadora IMC | Arthur Scarcela</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="lamps">
+        <i class="fa-solid fa-lightbulb" id="lamp-on" onclick="lightMode()"></i>
+        <i class="fa-regular fa-lightbulb" id="lamp-off" onclick="darkMode()"></i>
+    </div>
+    </i>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="content" id="content">
+        <div class="b-icon">
+            <box-icon name='dumbbell' flip='vertical' animation='tada' id="i-dumbbell"></box-icon>
+        </div>
+
+        <div class="l-input">
+        <label for="">Altura:</label>
+            <div id="l-label">
+        <input type="text" id="altura" placeholder="Ex: 1.65"><p>Metro(s)</p>
+            </div>
+
+        <label for="">Peso:</label>
+            <div id="l-label">
+        <input type="text" id="peso" placeholder="EX: 70"><p>Kilos</p>
+            </div>
+        </div>
+        
+        <div class="b-result">
+            <button onclick="enviar()" id="b-enviar">Calcular</button>
+            <div class="result">
+                <label for="">Resultado: </label>
+                <div id="resultado"></div>
+            </div>
+            <div id="result"></div>
+            <i class="fa-solid fa-circle-info fa-bounce" onclick="info()" id="infor"></i>
+        </div>
+    </div>
+
+    <div id="a-model">
+    <div id="line"></div>
+    <div id="model"></div>
+    </div>
+
+</div>
+<div id="i-info">
+    <div id="info">
+    <div id="c-close">
+        <b>Como calcular o IMC: </b>
+        <span onclick="hideInfo()" id="close"></span>
+    </div>
+    <p>O cálculo do IMC é feito usando a seguinte fórmula: peso (kg) ÷ (altura x altura) (m).</p>
+
+    <div class="tabela-c">
+        
+            
+        <ul class="classificacoes">
+            <b>IMC (Kg/m²)</b>
+            <li>Menor que 18,5</li>
+            <li>De 18,5 a 24,9	</li>
+            <li>De 25 a 29,9</li>
+            <li>De 30 a 39,9</li>
+            <li>Acima de 40</li>
+        </ul>
+
+        <ul class="classificacoes"> 
+            <b>Classificação</b>
+            <li>Baixo peso</li>
+            <li>Peso normal</li>
+            <li>Sobrepeso</li>
+            <li>Obesidade grau I</li>
+            <li>Obesidade grau II</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+    <footer id="footer">
+        <div class="d-footer">
+        <div class="social-media">
+            <a href="https://www.instagram.com/arthurscarcela/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/arthur.scarcela.1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/ArthurScarcela" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arthur-scarcela-7a9287240/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        Desenvolvido por: Arthur Scarcela©
+        </div>
+    </footer>
+
+</body>
+</html>

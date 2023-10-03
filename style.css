@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+html{
+    height: 100vh;
+    background-image: url("./assets/Business\ \(2\).png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 60px;
+}
+.lamps{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lamp-off{
+    font-size: 40px;
+    position: absolute;
+    z-index: 1;
+}
+#lamp-on{
+    font-size: 40px;
+    position: absolute;
+    color: #FFF;
+    display: none;
+    visibility: hidden;
+}
+.main-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-content label{
+    font-family: 'Concert One', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #145BEE;
+    text-transform: uppercase;
+}
+
+.content{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    background-color: #ffffff;
+    font-size: 25px;
+    color: #000;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.b-icon{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.b-icon::after{
+    content: "";
+    position: absolute;
+    background: #216ce7;
+    top: -888px;
+    left: 50%;
+    width: 800px;
+    height: 970px;
+    border-radius: 50%;
+    translate: -50% 0;
+}
+#i-dumbbell{
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    z-index: 3;
+    border-radius: 5;
+
+}
+
+
+.l-input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    row-gap: 20px;
+    padding-left: 10px;
+    margin: 0 0 0 20px;
+    
+}
+#l-label{
+    display: flex;
+}
+#l-label p{
+    font-family: 'Concert One', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #145BEE;
+}
+
+input{
+    width: auto;
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #145BEE;
+    color: #000;
+    text-align: start;
+    display: flex;
+
+}
+input::placeholder{
+    font-size: 10px;
+    color: #000;
+}
+
+input:focus{
+    box-shadow:0;
+    outline: 0;
+    border-bottom: 1px solid #000;
+    
+}
+.b-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    width: 280px;
+    height:40px;
+    background: rgb(28,157,224);
+    background: linear-gradient(135deg, rgba(28,200,224,1) 27%, rgba(51,152,238,1) 50%, rgba(48,80,129,1) 50%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Concert One', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFF;
+}
+
+i{
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    color: #145BEE;
+}
+.result{
+    margin: 15px 0 20px 0;
+    display: flex;
+
+}
+#resultado{
+    color: #000;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+#info{
+    width: 560px;
+    height: 240px;
+    background-color: black;
+    visibility: hidden;
+    border-radius: 12px;
+    background-color: #FFF;
+    
+}
+#info p,b{
+    font-size: 15px;
+    font-family: 'Russo One', sans-serif;
+    padding: 5px 20px 0 20px;
+    
+}
+#c-close{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px 2px 5px;
+}
+#close{
+    background-image: url("./assets/icons8-x-48.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#i-info{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela-c{
+    padding: 5px 0 0 0;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Russo One', Courier, monospace;
+    font-size: 20px;
+}
+.tabela-c b{
+    color: #145BEE;
+}
+
+.tabela-c li{
+    list-style: none;
+
+}
+#a-model{
+    width: 390px;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#model{
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1.5s;
+    
+}
+
+#line{
+    width: 0px;
+    height: 2px;
+    background-size: cover;
+    border-radius: 10px;
+    top: 450px;
+    right: 400px;
+    background-color: #FFF;
+    margin-left: 10px;
+    transition: 1s;
+}
+footer{
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28,200,224);
+    background: linear-gradient(135deg, rgba(28,200,224,1) 27%, rgba(51,152,238,1) 50%, rgba(48,80,129,1) 50%);
+    text-align: center;
+    font-family: 'Concert One', sans-serif;
+    color: #FFF;
+    padding: 5px;
+}
+
+.social-media{
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+
+.social-media i{
+    color: #FFF;
+    margin: 5px;
+}
+
+@media(max-width: 969px) {
+
+    html{
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 100vh;
+    }
+    .main-content{
+        display: flex;
+        height: 630px;
+        flex-direction: column;
+        object-position: center;
+    }
+    .b-icon::after{
+        height: 960px;
+
+    }
+    #line{
+        visibility: hidden;
+        margin-right: 10px;
+        padding-left: 60px;
+    }
+    #model{
+        width: 214px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    #a-model{
+        margin-top: 20px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 45px;
+    }
+    button{
+        margin-top: 5px;
+    }
+    #i-info{
+        width: 100vw;
+        height: 250px;
+    }
+    #info{
+        height: 250px;
+        position: fixed;
+        bottom: 120px;
+    }
+
+    footer{
+        text-align: center;
+        position:fixed;
+        bottom: 0;
+    }
+
+
+}
