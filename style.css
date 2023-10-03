@@ -339,6 +339,7 @@ footer{
     }
     #info{
         height: 250px;
+        width: 380px;
         position: fixed;
         bottom: 120px;
     }
